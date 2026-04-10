@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="media_css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/header-logo.png" type="image/x-icon">
+    <title>Istiqbol yo'li</title>
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    
+<body>
+    <header>
+        <div class="header-content container">
+            <div class="header-logo">
+                <img src="./images/header-logo.png" alt="logo">
+            </div>
+            <nav class="navigatin-link nav">
+                <ul>
+                    <li><a href="#">Bosh Sahifa</a></li>
+                    <li><a href="#">Gazeta nashrlari</a></li>
+                    <li><a href="#">Yangiliklar</a></li>
+                    <li><a href="#">Maqolalar</a></li>
+                    <li><a href="#">Biz Haqimizda</a></li>
+                </ul>
+            </nav>
+        </div>
+        <marquee behavior="behavior" direction="">YUKSAKLIKKA ELTUVCHI YO‘L — MUVAFFAQQIYAT IZCHIL MEHNAT, QAT’IYAT VA BILIM NATIJASIDIR.</marquee>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="slider-container">
+              <div class="slider" id="slider">
+                <div class="slide" style="background-image: url('./images/background/businessman-sitting-reading-newspaper.jpg');">
+                
+                </div>
+                <div class="slide" style="background-image: url('./images/background/men_girls.jpg');">
+                  <!-- <div class="content"><h3>Texnologiya yangiliklari</h3></div> -->
+                </div>
+                <div class="slide" style="background-image: url('./images/background/news.jpg');">
+                  <!-- <div class="content"><h3>Fotografiya san'ati</h3></div> -->
+                </div>
+              </div>
+          
+              <button id="slider-btn" class="prev" onclick="moveSlide(-1)">&#10094;</button>
+              <button id="slider-btn" class="next" onclick="moveSlide(1)">&#10095;</button>
+          
+              <div class="dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+              </div>
+            </div>
+            
+            <!-- <div class="hero-footer">
+              <h1>Blogimizga xush kelibsiz</h1>
+              <p>Eng so'nggi maqolalar va yangiliklar shu yerda.</p>
+            </div> -->
+          </section>
+        <section class="container">
+            <div class="blog-cards">
+                <a href="./gazeta/gazeta.html">
+                    <div class="blog-card "  data-aos="flip-left">
+                        <div class="blog-img">
+                            <img src="./images/card/photo_2026-03-27_10-43-38.jpg" alt="card-logo">
+                        </div>
+                        <div class="blog-title">
+                            <p>QADRIYATLAR VA VAQT CHORRAHASIDAGI AZALIY AYYOM </p>
+                        </div>
+                        <div class="blog-description">
+                            <span>Navro‘z — bu tabiatning yangi sahifasi ochiladigan, yil yangilanadigan, kun va tun tenglashib, olam muvozanatga keladigan betakror ayyomdir. Asrlar bo‘ylab bizgacha yetib kelgan ushbu qadimiy bayram inson va tabiat o‘rtasidagi uyg‘unlikni, hayotning abadiy davomiyligini o‘zida mujassam etadi. Aynan shu kunlardan boshlab zamin uyg‘onadi, nihollar unadi, qalblarda esa yangilanish, poklanish va ezgulikka intilish tuyg‘ulari jo‘sh uradi.</span>
+                        </div>
+                     
+<!-- From Uiverse.io by adamgiebl --> 
+                <button class="cssbuttons-io-button">
+                    Batafsil
+                    <div class="icon">
+                    <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"
+                        ></path>
+                    </svg>
+                    </div>
+                </button>
+                
+  
+
+                    </div>
+                </a>
+
+               <a href="./gazeta/gazeta-two-page.html">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/card/card-2.jpg" alt="card-logo">
+                    </div>
+                    <div class="blog-title">
+                        <p>OBODLIKKA YUZ TUTAR </p>
+                    </div>
+                    <div class="blog-description">
+                        <span>
+                            Bahorning iliq nafasi yurtimizga yangilanish va yasharish pallasini hadya etganda “Yurt obodligi, avvalo, mahalladan boshlanadi!” shiori ostida tashkil etilayotgan umumxalq xayriya hashari, mahallalarni yana bir bor hamjihatlik maskaniga aylantirdi. Daraxtlar kurtak yozib, tabiat uyg‘onayotgan huzurbaxsh kunlarda qo‘shtepalik insonlar qalbida ham ezgulik, mehr va birdamlik tuyg‘ulari jo‘sh urib, tashkilot va muassasalar xodimlari, mahalla faollari hamda keng jamoatchilik vakillarini keng ko‘lamli obodonlashtirish va ko‘kalamzorlashtirish ishlari doirasida birlashdilar.</span>
+                    </div>
+                    <button class="cssbuttons-io-button">
+                        Batafsil
+                        <div class="icon">
+                        <svg
+                            height="24"
+                            width="24"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"
+                            ></path>
+                        </svg>
+                        </div>
+                    </button>
+      
+                </div>
+               </a>
+
+               <a href="./gazeta/gazeta-three-page.html"> <div class="blog-card">
+                <div class="blog-img">
+                    <img src="./images/card/card-3.jpg" alt="card-logo">
+                </div>
+                <div class="blog-title">
+                    <p>KORRUPSIYA – JAMIYAT KUSHANDASI </p>
+                </div>
+                <div class="blog-description">
+                    <span>Korrupsiya har qanday jamiyat va davlat uchun katta tahdid hisoblanib, davlat organlarining ishonchiga zarar keltiradi, iqtisodiy o‘sishni to‘xtatib qo‘yadi va ijtimoiy adolatni buzadi. Davlatimizda korrupsiya muammosi mavjud bo‘lib, unga qarshi kurashishda hukumatimiz tomonidan turli choralar ko‘rilmoqda. Shaxslarning huquqlari va manfaatlarini himoya qilish, adolatli va shaffof jamiyat qurish maqsadida davlatimizda korrupsiyaga qarshi qat’iy siyosat yuritilmoqda. </span>
+                </div>
+                <button class="cssbuttons-io-button">
+                    Batafsil
+                    <div class="icon">
+                    <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"
+                        ></path>
+                    </svg>
+                    </div>
+                </button>
+  
+                </div></a>
+
+                <a href="./gazeta/gazeta-four-page.html">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="./images/card/card-4.jpg" alt="card-logo">
+                        </div>
+                        <div class="blog-title">
+                            <p>SALOMATLIK MARAFONI – SOG'LOM HAYOT GAROVI  </p>
+                        </div>
+                        <div class="blog-description">
+                            <span>Mustaqil Respublikamizning har tomonlama rivojlanib borishi va taraqqiy etishi uchun uning zaminida yashayotgan fuqarolar va bu jamiyatda dunyoga kelayotgan farzandlar har tomonlama sog‘lom, yetuk, barkamol avlod sifatida shakllanishi kerak. </span>
+                        </div>
+                        <button class="cssbuttons-io-button">
+                            Batafsil
+                            <div class="icon">
+                            <svg
+                                height="24"
+                                width="24"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"
+                                ></path>
+                            </svg>
+                            </div>
+                        </button>
+          
+                    </div>
+                </a>
+
+
+                <a href="./gazeta/gazeta-five-page.html">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="./images/card/card-5.png" alt="card-logo">
+                        </div>
+                        <div class="blog-title">
+                            <p>MUHTASHAM AMFITEATRGA MARHABO! </p>
+                        </div>
+                        <div class="blog-description">
+                            <span>Go‘zal va barhavo maskan Qo‘shtepa markazi bag‘rida yana bir go‘zal maskan – hashamatli va muhtasham amfiteatr bunyod etildi. Zamonaviy bu inshoot tumanimiz chiroyiga chiroy qo‘shib, uning madaniy hayotiga yangi hayot olib kirdi. </span>
+                        </div>
+                        <button class="cssbuttons-io-button">
+                            Batafsil
+                            <div class="icon">
+                            <svg
+                                height="24"
+                                width="24"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"
+                                ></path>
+                            </svg>
+                            </div>
+                        </button>
+          
+                    </div>
+                </a>
+
+               <a href="./gazeta/gazeta-six-page.html">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/card/card-6.jpg" alt="card-logo">
+                    </div>
+                    <div class="blog-title">
+                        <p>YONGʻIN XAVFSIZLIGI QOIDALARIGA RIOYA QILAYLIK  </p>
+                    </div>
+                    <div class="blog-description">
+                        <span>
+                            Qo‘shtepa tumani Favqulodda vaziyatlar bo‘limi xodimlari tomonidan joriy yilning matr oyi davomida tuman xududida joylashgan Yangi do‘kon, Quvirboshi, Sarmozor, Xumdon, Eshonguzar, Qumtepa, Vatan, Balandmasjid, Oqtepa, Qamishtepa, Namuna mahalla fuqarolar yig‘ini hududlarida aholi yashash xonadonlarida Hududgaz Farg‘ona GTF Qo‘shtepa tumani bo‘limi, Elektr tarmoqlari korxonasi mutaxassislarini jalb qilgan holatda keng ko‘lamli profilaktik tadbirlar o‘tkazildi. </span>
+                    </div>
+                    <button class="cssbuttons-io-button">
+                        Batafsil
+                        <div class="icon">
+                        <svg
+                            height="24"
+                            width="24"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"
+                            ></path>
+                        </svg>
+                        </div>
+                    </button>
+      
+                </div>
+               </a>
+
+               <a href="./gazeta/gazeta-seven-page.html"> <div class="blog-card">
+                <div class="blog-img">
+                    <img src="./images/card/card-7.jpg" alt="card-logo">
+                </div>
+                <div class="blog-title">
+                    <p>QALBNI YORITGUVCHI NUR – RAMAZON  </p>
+                </div>
+                <div class="blog-description">
+                    <span>Ramazon – musulmon olami uchun eng muborak va muqaddas oy bo‘lib, Qur’oni Karimning nozil bo‘lgan va mo‘minlarni ruhiy jihatdan poklashga chorlaydigan oyidir. Ushbu oy nafaqat jismoniy, balki ma’naviy tarbiya, sabr-toqat va ezgu amallarni rivojlantirish davri hisoblanadi. Har bir mo‘min uchun Ramazon – qalbni tozalash, ezgu niyatlarni mustahkamlash va jamiyatda mehr-oqibatni oshirish imkoniyatidir. Ramazon oyining eng asosiy ibodati – ro‘zadir. </span>
+                </div>
+                <button class="cssbuttons-io-button">
+                    Batafsil
+                    <div class="icon">
+                    <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"
+                        ></path>
+                    </svg>
+                    </div>
+                </button>
+  
+                </div></a>
+
+                <a href="./gazeta/gazeta-eight-page.html">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="./images/card/card-8.jpg" alt="card-logo">
+                        </div>
+                        <div class="blog-title">
+                            <p>XOTIN-QIZLAR TA’LIMIDA YANGI SAHIFA  </p>
+                        </div>
+                        <div class="blog-description">
+                            <span>Mamlakatimizda Mamlakatimizda xotin-qizlarning xotin-qizlarning ta’lim olishi, ta’lim olishi, kasb egallashi kasb egallashi va jamiyatda va jamiyatda munosib o‘rin munosib o‘rin topishi uchun topishi uchun keng imkoniyatlar keng imkoniyatlar yaratib yaratib kelinmoqda. kelinmoqda. So‘nggi yillarda So‘nggi yillarda bu borada qator bu borada qator yangi imtiyoz va yangi imtiyoz va tashabbuslar joriy tashabbuslar joriy etilmoqda.</span>
+                        </div>
+                        <button class="cssbuttons-io-button">
+                            Batafsil
+                            <div class="icon">
+                            <svg
+                                height="24"
+                                width="24"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"
+                                ></path>
+                            </svg>
+                            </div>
+                        </button>
+          
+                    </div>
+                </a>
+
+
+
+                
+                <a href="./gazeta/gazeta-nine-page.html">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="./images/card/card-9.jpg" alt="card-logo">
+                        </div>
+                        <div class="blog-title">
+                            <p>AYOL, MODA VA RUHIY BARQARORLIK</p>
+                        </div>
+                        <div class="blog-description">
+                            <span>Moda bilan sogʻlom munosabat ayolning ruhiy barqarorligini oshiradi, oʻziga ishonch va ichki nafislikni kuchaytiradi. Juda ortiqcha moda qiziqishi esa oʻzini faqat tashqi koʻrinishi orqali baholashga olib kelishi mumkin. Moda bilan sogʻlom munosabat oʻrnatish uchun esa avvalo oʻzini qadrlashni birinchi oʻringa qoʻyish muhim. Kiyimni faqat boshqalar uchun emas, oʻzingiz uchun tanlang va qulay, oʻzingizga yoqadigan kiyimlarni kiyishga harakat qiling.</span>
+                        </div>
+                        <button class="cssbuttons-io-button">
+                            Batafsil
+                            <div class="icon">
+                            <svg
+                                height="24"
+                                width="24"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"
+                                ></path>
+                            </svg>
+                            </div>
+                        </button>
+          
+                    </div>
+                </a>
+
+               <a href="./gazeta/gazeta-ten-page.html">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/card/card-10.jpg" alt="card-logo">
+                    </div>
+                    <div class="blog-title">
+                        <p>SARISHTALIK KO‘NGIL OBODLIGIDAN BOSHLANUR </p>
+                    </div>
+                    <div class="blog-description">
+                        <span>
+                            Har bir tartibli yo‘llar, har bir saranjom ko‘chalar ortida ko‘zga ko‘rinmas, ammo katta fidoiylik talab qiladigan kamtarin insonlarning mehnati mujassam. Ular o‘z ishlarini sidqidildan bajaradilar. Shu bois  tumanimiz hududi hamisha ozoda va ko‘rkam, xushmanzara va oboddir. </span>
+                    </div>
+                    <button class="cssbuttons-io-button">
+                        Batafsil
+                        <div class="icon">
+                        <svg
+                            height="24"
+                            width="24"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"
+                            ></path>
+                        </svg>
+                        </div>
+                    </button>
+      
+                </div>
+               </a>
+
+               <a href="./gazeta/gazeta-eleven-page.html"> <div class="blog-card">
+                <div class="blog-img">
+                    <img src="./images/card/card-11.jpg" alt="card-logo">
+                </div>
+                <div class="blog-title">
+                    <p>KOINOT SOATI BUZILGANMI YOHUD SAYYORALARDA VAQTNING GʻALATI OQIMI </p>
+                </div>
+                <div class="blog-description">
+                    <span>Insoniyat vaqtni asosan Yer mezonlari asosida oʻlchaydi. Biz uchun bir yil 365 kun, bir sutka esa 24 soatdan iborat. Bu tizim kundalik hayotimiz, kalendarlarimiz, fasllarimiz va hatto tariximizni belgilab beradi. Biroq koinot miqyosida qaraydigan boʻlsak, vaqt tushunchasi unchalik ham bir xil emas. Quyosh tizimidagi har bir sayyora Quyosh atrofida turli tezlikda aylanadi. Shu sababli har bir sayyorada yilning davomiyligi ham butunlay boshqacha. </span>
+                </div>
+                <button class="cssbuttons-io-button">
+                    Batafsil
+                    <div class="icon">
+                    <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"
+                        ></path>
+                    </svg>
+                    </div>
+                </button>
+  
+                </div></a>
+
+             
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./images/header-logo.png" alt="logo">
+            </div>
+            <div class="footer-icons">
+                <a href="#"><img src="./images/icons/instagram-1-svgrepo-com.svg" alt="instagram"></a>
+
+                <a href="#"><img src="./images/icons/facebook-network-communication-internet-interaction-svgrepo-com.svg" alt="facebook"></a>
+
+                <a href="https://t.me/IY_Media"><img src="./images/icons/telegram-svgrepo-com.svg" alt="facebook"></a>
+            </div>
+            <div class="footer-text">
+                <p>@ 2026 Istiqbol Yo‘li. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const slider = document.getElementById('slider');
+const dots = document.querySelectorAll('.dot');
+
+function updateSlider() {
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  
+  // Nuqtalarni yangilash
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[currentIndex].classList.add('active');
+}
+
+function moveSlide(step) {
+  currentIndex += step;
+  if (currentIndex >= slides.length) currentIndex = 0;
+  if (currentIndex < 0) currentIndex = slides.length - 1;
+  updateSlider();
+}
+
+function currentSlide(index) {
+  currentIndex = index;
+  updateSlider();
+}
+
+// Avtomatik o'tish (har 5 soniyada)
+let autoSlide = setInterval(() => moveSlide(1), 3000);
+
+// Foydalanuvchi tugmani bossa, taymerni yangilash
+document.querySelector('.slider-container').addEventListener('mouseenter', () => {
+  clearInterval(autoSlide);
+});
+
+document.querySelector('.slider-container').addEventListener('mouseleave', () => {
+  autoSlide = setInterval(() => moveSlide(1), 3000);
+});
+
+// Dastlabki holatni faollashtirish
+updateSlider();
+    </script>
+</body>
+</html>

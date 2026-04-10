@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  header{
+    background-color: oklch(77.7% 0.152 181.912);
+    background-color: rgb(187, 197, 199);
+  }
+  marquee{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    font-family: "Merriweather", monospace;
+  }
+
+  .container{
+    max-width: 1440px;
+    margin: 0 auto;
+
+  }
+
+.header-content{
+ width: 100%;
+ height: 120px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 20px;
+}
+
+.header-content img{
+    width: 250px;
+    height: 80px;
+}
+
+.header-content nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.header-content nav ul li{
+   list-style: none;
+}
+
+.header-content nav ul li a{
+  text-decoration: none;
+  color:#ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:  sans-serif;
+  font-family: "Merriweather", serif;
+ }
+
+.header-content nav ul li:hover {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+    color: oklch(54.2% 0.034 322.5);
+}
+
+.header-content nav ul li a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+    color: oklch(54.2% 0.034 322.5);
+}
+
+/* ------------------------------------------------ */
+/* Blog-cards */
+body{
+     background-color: oklch(94.3% 0.029 294.588);
+}
+.blog-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center; 
+    gap: 10px;
+    margin: 30px 0;
+   
+}
+
+.blog-cards a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.blog-card{
+    max-width: 350px;
+    height: 520px;
+    border: 1px solid #b5abab;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content:center;
+    gap: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.blog-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top; 
+    border-radius: 20px;
+
+}
+
+.blog-title{
+    padding: 0px 15px;
+    min-height: 30px;
+}
+
+.blog-description{
+    padding: 0px 15px;
+}
+
+.blog-title p{
+    font-weight: 700;
+    font-family: "Merriweather", sans-serif;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* nechta qatorda to‘xtasin */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-description span{
+    color: #605f5f;
+   
+}
+
+.blog-description span {
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* nechta qatorda to‘xtasin */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+.blog-cards a:hover{
+    transform: scale(1.03);
+    transition: all 0.2s linear;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+    max-width: 180px;
+    /* background: #c4a3f4; */
+    background: #a370f0;
+
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    margin: 0 5px 10px 15px;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  
+
+
+
+/* -------------------------------------------- */
+
+/* Gazeta description */
+
+.description {
+    margin: 30px auto;
+}
+.title-info button{
+    border: none;
+    /* background-color: oklch(77.7% 0.152 181.912); */
+    background-color: rgb(187, 197, 199);
+    padding: 20px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+.title-info button:hover{
+    background-color: oklch(78.9% 0.154 211.53);
+    color: #222222;
+    transition: all 0.3s linear;
+}
+
+.top-description{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Merriweather", monospace;
+}
+
+.title-img{
+    width: 650px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.title-img img{
+    width: 100%;;
+    height: 100%;
+    object-fit: cover;   
+}
+
+.description-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description-info span{
+    font-size: 20px;
+    color: #605f5f;
+}
+
+.description-info-bottom{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description-info-bottom p{
+    font-size: 20px;
+    color: #605f5f;
+}
+
+.title-info{
+    font-size: 50px;
+    font-family: "Merriweather", monospace;
+    font-weight: 700;
+    /* border-bottom: 1px solid #333333; */
+}
+
+/* From Uiverse.io by barisdogansutcu */ 
+.back {
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .back:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  .back:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(6px);
+    transition: 60ms;
+  }
+  
+
+
+  /* --------------Footer---------------------- */
+
+
+  footer{
+    height: 200px;
+    /* background-color:  oklch(77.7% 0.152 181.912); */
+    /* background-color: oklch(85.5% 0.138 181.071); */
+    /* background-color: oklch(91% 0.096 180.426); */
+    /* background-color: oklch(85.5% 0.138 181.071); */
+    /* background-color: oklch(84.5% 0.143 164.978);
+    background-color: oklch(87.1% 0.15 154.449); */
+    background-color: rgb(187, 197, 199);
+  }
+
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .footer-content img{
+    width: 180px;
+  }
+
+  .footer-icons{
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer-icons img{
+    width: 40px;
+  }
+
+  .footer-text{
+    font-family: "Merriweather", monospace;
+    font-weight: 600;
+    color: #444444;
+  }
+
+
+
+  /* slider */
+
+  
+.hero {
+  height: 50vh; /* Umumiy Hero balandligi */
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-container {
+  height: 100%; /* Hero'ning yarmi */
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.content h3 {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Tugmalar uslubi */
+#slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.3);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+#slider-btn:hover { background: rgba(0,0,0,0.6); }
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Nuqtalar */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.active { background-color: #fff; }
+
+.hero-footer {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f4f4f4;
+}
