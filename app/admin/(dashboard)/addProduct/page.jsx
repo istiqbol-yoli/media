@@ -26,31 +26,64 @@ const page = () => {
         console.log(data);
       }
 
-      const onSubmitHandler = async(e)=>{
-          e.preventDefault();
+      // const onSubmitHandler = async(e)=>{
+      //     e.preventDefault();
+      //     const formData = new FormData();
+      //     formData.append('title', data.title);
+      //     formData.append('description', data.description);
+      //     formData.append('category', data.category);
+      //     formData.append('author', data.author);
+      //     formData.append('authorImg', data.authorImg);
+      //     formData.append('image', image);
+      //     const response = await axios.post('/api/blog', formData);
+      //     if(response.data.success){
+      //       toast.success(response.data.msg);
+      //       setImage(false);
+      //       setData({
+      //         title: "",
+      //         description: "",
+      //         category: "Ilm-Fan",
+      //         author: "Shahnoza Abduhoshimova",
+      //         authorImg: "/author_img.png"
+      //       });
+      //     }
+      //     else{
+      //       toast.error("Error")
+      //     }
+      // }
+
+      const onSubmitHandler = async (e) => {
+        e.preventDefault();
+      
+        try {
           const formData = new FormData();
-          formData.append('title', data.title);
-          formData.append('description', data.description);
-          formData.append('category', data.category);
-          formData.append('author', data.author);
-          formData.append('authorImg', data.authorImg);
-          formData.append('image', image);
-          const response = await axios.post('/api/blog', formData);
-          if(response.data.success){
+      
+          formData.append("title", data.title);
+          formData.append("description", data.description);
+          formData.append("category", data.category);
+          formData.append("author", data.author);
+          formData.append("authorImg", data.authorImg);
+          formData.append("image", image);
+      
+          const response = await axios.post("/api/blog", formData);
+      
+          if (response.data.success) {
             toast.success(response.data.msg);
+      
             setImage(false);
             setData({
               title: "",
               description: "",
               category: "Ilm-Fan",
               author: "Shahnoza Abduhoshimova",
-              authorImg: "/author_img.png"
+              authorImg: "/author_img.png",
             });
           }
-          else{
-            toast.error("Error")
-          }
-      }
+        } catch (error) {
+          console.log(error);
+          toast.error(error.response?.data?.msg || "Xatolik yuz berdi");
+        }
+      };
 
   return (
     <>
