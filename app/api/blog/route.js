@@ -96,21 +96,59 @@ export async function POST(request){
 //     return NextResponse.json({msg:"Blog Deleted"})
 // }
 
-export async function DELETE(request){
+// export async function DELETE(request){
 
-    const id = request.nextUrl.searchParams.get("id");
+//     const id = request.nextUrl.searchParams.get("id");
 
-    const blog = await BlogModel.findById(id);
+//     const blog = await BlogModel.findById(id);
 
-    if(blog.image){
-        await del(blog.image);
+//     if(blog.image){
+//         await del(blog.image);
+//     }
+
+//     await BlogModel.findByIdAndDelete(id);
+
+//     return NextResponse.json({
+//         success:true,
+//         msg:"Blog Deleted"
+//     });
+
+// }
+
+
+export async function DELETE(request) {
+    try {
+
+        const id = request.nextUrl.searchParams.get("id");
+
+        const blog = await BlogModel.findById(id);
+
+        // Blobni o'chirishga harakat qilamiz
+        if (blog?.image) {
+            try {
+                await del(blog.image);
+                console.log("Blob deleted");
+            } catch (err) {
+                console.log("Blob delete error:", err.message);
+            }
+        }
+
+        // MongoDB dan albatta o'chiriladi
+        await BlogModel.findByIdAndDelete(id);
+
+        return NextResponse.json({
+            success: true,
+            msg: "Blog Deleted"
+        });
+
+    } catch (error) {
+
+        console.log(error);
+
+        return NextResponse.json({
+            success: false,
+            msg: error.message
+        }, { status: 500 });
+
     }
-
-    await BlogModel.findByIdAndDelete(id);
-
-    return NextResponse.json({
-        success:true,
-        msg:"Blog Deleted"
-    });
-
 }
